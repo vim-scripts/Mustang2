@@ -34,6 +34,7 @@ hi Folded         ctermbg=4   ctermfg=248 guibg=#384048 guifg=#a0a8b0           
 hi Title                      ctermfg=254 guibg=none    guifg=#f6f3e8 cterm=bold   gui=bold
 hi Visual         ctermbg=4   ctermfg=254 guibg=#3c414c guifg=#faf4c6              gui=none
 hi SpecialKey     ctermbg=236 ctermfg=244 guibg=#343434 guifg=#808080              gui=none
+hi ColorColumn    ctermbg=235             guibg=#303030
 
 " Syntax highlighting
 hi Comment                    ctermfg=244               guifg=#808080              gui=italic
