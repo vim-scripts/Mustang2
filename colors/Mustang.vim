@@ -26,6 +26,7 @@ hi Cursor         ctermbg=241             guibg=#626262 guifg=none              
 hi Normal         ctermbg=234 ctermfg=253 guibg=#202020 guifg=#e2e2e5              gui=none
 hi NonText        ctermbg=235 ctermfg=244 guibg=#303030 guifg=#808080              gui=none
 hi LineNr         ctermbg=232 ctermfg=244 guibg=#000000 guifg=#808080              gui=none
+hi SignColumn     ctermbg=232 ctermfg=244 guibg=#000000 guifg=#808080              gui=none
 hi StatusLine     ctermbg=238 ctermfg=253 guibg=#444444 guifg=#d3d3d5 cterm=italic gui=italic
 hi StatusLineNC   ctermbg=238 ctermfg=246 guibg=#444444 guifg=#939395              gui=none
 hi VertSplit      ctermbg=238 ctermfg=238 guibg=#444444 guifg=#444444              gui=none
