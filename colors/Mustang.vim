@@ -1,6 +1,6 @@
-" Maintainer:	Henrique C. Alves (hcarvalhoalves@gmail.com)
+" Maintainer:   Henrique C. Alves (hcarvalhoalves@gmail.com)
 " Version:      1.0
-" Last Change:	September 25 2008
+" Last Change:  September 25 2008
 
 set background=dark
 
@@ -10,48 +10,48 @@ if exists("syntax_on")
   syntax reset
 endif
 
-let colors_name = "mustang"
+let g:colors_name="Mustang"
 
 " Vim >= 7.0 specific colors
 if version >= 700
-  hi CursorLine guibg=#2d2d2d ctermbg=236
-  hi CursorColumn guibg=#2d2d2d ctermbg=236
-  hi MatchParen guifg=#d0ffc0 guibg=#2f2f2f gui=bold ctermfg=157 ctermbg=237 cterm=bold
-  hi Pmenu 		guifg=#ffffff guibg=#444444 ctermfg=255 ctermbg=238
-  hi PmenuSel 	guifg=#000000 guibg=#b1d631 ctermfg=0 ctermbg=148
+  hi CursorLine   ctermbg=236             guibg=#2d2d2d
+  hi CursorColumn ctermbg=236             guibg=#2d2d2d
+  hi MatchParen   ctermbg=237 ctermfg=157 guibg=#2f2f2f guifg=#d0ffc0 cterm=bold   gui=bold
+  hi Pmenu        ctermbg=238 ctermfg=255 guibg=#444444 guifg=#ffffff
+  hi PmenuSel     ctermbg=148 ctermfg=0   guibg=#b1d631 guifg=#000000
 endif
 
 " General colors
-hi Cursor 		guifg=NONE    guibg=#626262 gui=none ctermbg=241
-hi Normal 		guifg=#e2e2e5 guibg=#202020 gui=none ctermfg=253 ctermbg=234
-hi NonText 		guifg=#808080 guibg=#303030 gui=none ctermfg=244 ctermbg=235
-hi LineNr 		guifg=#808080 guibg=#000000 gui=none ctermfg=244 ctermbg=232
-hi StatusLine 	guifg=#d3d3d5 guibg=#444444 gui=italic ctermfg=253 ctermbg=238 cterm=italic
-hi StatusLineNC guifg=#939395 guibg=#444444 gui=none ctermfg=246 ctermbg=238
-hi VertSplit 	guifg=#444444 guibg=#444444 gui=none ctermfg=238 ctermbg=238
-hi Folded 		guibg=#384048 guifg=#a0a8b0 gui=none ctermbg=4 ctermfg=248
-hi Title		guifg=#f6f3e8 guibg=NONE	gui=bold ctermfg=254 cterm=bold
-hi Visual		guifg=#faf4c6 guibg=#3c414c gui=none ctermfg=254 ctermbg=4
-hi SpecialKey	guifg=#808080 guibg=#343434 gui=none ctermfg=244 ctermbg=236
+hi Cursor         ctermbg=241             guibg=#626262 guifg=none                 gui=none
+hi Normal         ctermbg=234 ctermfg=253 guibg=#202020 guifg=#e2e2e5              gui=none
+hi NonText        ctermbg=235 ctermfg=244 guibg=#303030 guifg=#808080              gui=none
+hi LineNr         ctermbg=232 ctermfg=244 guibg=#000000 guifg=#808080              gui=none
+hi StatusLine     ctermbg=238 ctermfg=253 guibg=#444444 guifg=#d3d3d5 cterm=italic gui=italic
+hi StatusLineNC   ctermbg=238 ctermfg=246 guibg=#444444 guifg=#939395              gui=none
+hi VertSplit      ctermbg=238 ctermfg=238 guibg=#444444 guifg=#444444              gui=none
+hi Folded         ctermbg=4   ctermfg=248 guibg=#384048 guifg=#a0a8b0              gui=none
+hi Title                      ctermfg=254 guibg=none    guifg=#f6f3e8 cterm=bold   gui=bold
+hi Visual         ctermbg=4   ctermfg=254 guibg=#3c414c guifg=#faf4c6              gui=none
+hi SpecialKey     ctermbg=236 ctermfg=244 guibg=#343434 guifg=#808080              gui=none
 
 " Syntax highlighting
-hi Comment 		guifg=#808080 gui=italic ctermfg=244
-hi Todo 		guifg=#8f8f8f gui=italic ctermfg=245
-hi Boolean      guifg=#b1d631 gui=none ctermfg=148
-hi String 		guifg=#b1d631 gui=italic ctermfg=148
-hi Identifier 	guifg=#b1d631 gui=none ctermfg=148
-hi Function 	guifg=#ffffff gui=bold ctermfg=255
-hi Type 		guifg=#7e8aa2 gui=none ctermfg=103
-hi Statement 	guifg=#7e8aa2 gui=none ctermfg=103
-hi Keyword		guifg=#ff9800 gui=none ctermfg=208
-hi Constant 	guifg=#ff9800 gui=none  ctermfg=208
-hi Number		guifg=#ff9800 gui=none ctermfg=208
-hi Special		guifg=#ff9800 gui=none ctermfg=208
-hi PreProc 		guifg=#faf4c6 gui=none ctermfg=230
-hi Todo         guifg=#000000 guibg=#e6ea50 gui=italic
+hi Comment                    ctermfg=244               guifg=#808080              gui=italic
+hi Todo                       ctermfg=245               guifg=#8f8f8f              gui=italic
+hi Boolean                    ctermfg=148               guifg=#b1d631              gui=none
+hi String                     ctermfg=148               guifg=#b1d631              gui=italic
+hi Identifier                 ctermfg=148               guifg=#b1d631              gui=none
+hi Function                   ctermfg=255               guifg=#ffffff              gui=bold
+hi Type                       ctermfg=103               guifg=#7e8aa2              gui=none
+hi Statement                  ctermfg=103               guifg=#7e8aa2              gui=none
+hi Keyword                    ctermfg=208               guifg=#ff9800              gui=none
+hi Constant                   ctermfg=208               guifg=#ff9800              gui=none
+hi Number                     ctermfg=208               guifg=#ff9800              gui=none
+hi Special                    ctermfg=208               guifg=#ff9800              gui=none
+hi PreProc                    ctermfg=230               guifg=#faf4c6              gui=none
+hi Todo                                   guibg=#e6ea50 guifg=#000000              gui=italic
 
 " Code-specific colors
-hi pythonOperator guifg=#7e8aa2 gui=none ctermfg=103
+hi pythonOperator             ctermfg=103               guifg=#7e8aa2              gui=none
 
-hi Search     guifg=white	guibg=NONE	cterm=NONE	gui=underline
+hi Search                                 guibg=none    guifg=white   cterm=none   gui=underline
 
